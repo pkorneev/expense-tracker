@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.05rem;
+}
+:root{
+    --background: rgb(117, 207, 255);
+    --margin-top-big: 4rem;
+    --margin-top-small: 2rem;
+    --margin-basic: 1rem;
+    --green: rgb(19, 154, 1);
+}
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+button{
+    cursor: pointer;
+}
+.heading{
+    margin-top: var(--margin-top-big);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading h1{
+    font-size: 2rem;
+}
+.heading h2{
+    margin-top: var(--margin-basic);
+    color: var(--green);
+    font-size: 1.5rem;
+}
+.inputs{
+    margin-top: var(--margin-top-big);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin-left: .5rem;
+    padding: .125rem .5rem;
+}
+.inputs div{
+    display: flex;
+    justify-content: center;
+}
+.inputs-second-row{
+    margin-top: var(--margin-basic);    
+}
+.inputs-second-row input{
+    flex: 1;
+}
+.second-label{
+    margin-left: .5rem;
+}
+
+.input-first{
+    width: 100%;
+}
+
+.button-add-expense{
+    margin-top: var(--margin-top-small);
+}
+.button-add-expense button{
+    background-color: var(--green);
+    padding: .5rem 1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.button-add-expense button:active{
+    opacity: .6;
+}
+.table{
+    margin-top: var(--margin-top-big);
+}
+.table{
+    width: 100%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(203, 203, 203);
+}
+th{
+    padding: .5rem 1rem;
+    border: 1px solid rgb(203, 203, 203);
+}
+.table-cell{
+    padding: .25rem .5rem;
+    text-align: center;
+    border: 1px solid rgb(203, 203, 203);
+    background-color: rgb(228, 228, 228);
+}
